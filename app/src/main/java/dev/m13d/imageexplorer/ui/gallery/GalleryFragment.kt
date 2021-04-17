@@ -91,7 +91,6 @@ class GalleryFragment : Fragment(R.layout.fragment_gallery), UnsplashPhotoAdapte
             override fun onQueryTextChange(newText: String?): Boolean {
                 return true
             }
-
         })
     }
 
