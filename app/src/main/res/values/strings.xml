@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Image Explorer</string>
     <string name="error_message">Results could not be loaded</string>
+    <string name="search">Search</string>
 </resources>
