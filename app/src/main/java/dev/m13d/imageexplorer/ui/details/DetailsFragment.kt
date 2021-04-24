@@ -28,7 +28,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
         binding.apply {
             val photo = args.photo
 
-            Glide.with( this@DetailsFragment)
+            Glide.with(this@DetailsFragment)
                 .load(photo.urls.full)
                 .error(R.drawable.ic_error)
                 .listener(object : RequestListener<Drawable> {

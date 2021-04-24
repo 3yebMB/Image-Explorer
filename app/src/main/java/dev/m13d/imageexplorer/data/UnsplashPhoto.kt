@@ -9,7 +9,7 @@ data class UnsplashPhoto(
     val description: String?,
     val urls: UnsplashPhotoUrls,
     val user: UnsplashUser,
-): Parcelable {
+) : Parcelable {
     @Parcelize
     data class UnsplashPhotoUrls(
         val raw: String,
@@ -17,12 +17,12 @@ data class UnsplashPhoto(
         val regular: String,
         val small: String,
         val thumb: String,
-    ): Parcelable
+    ) : Parcelable
     @Parcelize
     data class UnsplashUser(
         val name: String,
         val username: String,
-    ): Parcelable {
+    ) : Parcelable {
         val attributionUrl get() = "https://unplash.com/$username?utm_source=ImageExplorer&utm_medium=referral"
     }
 }

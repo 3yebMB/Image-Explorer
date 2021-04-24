@@ -25,9 +25,9 @@ class UnsplashPagingSource(
                 prevKey = if (position == UNSPLASH_STARTING_PAGE_INDEX) null else position - 1,
                 nextKey = if (photos.isEmpty()) null else position + 1
             )
-        } catch (ex : IOException) {
+        } catch (ex: IOException) {
             LoadResult.Error(ex)
-        } catch (ex : HttpException) {
+        } catch (ex: HttpException) {
             LoadResult.Error(ex)
         }
     }
